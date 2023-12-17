@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter_keyboard_size/flutter_keyboard_size.dart';
-import 'package:keyboard_utils/widgets.dart';
+// import 'package:keyboard_utils/widgets.dart';
 
 import 'inputs/IpsInput.dart';
 import 'utils/colors.dart';
@@ -144,28 +144,28 @@ class Sheet {
                   ],
                 ),
               ),
-              KeyboardAware(
-                builder: (context, keyboardConfig) {
-                  return Consumer<ScreenHeight>(
-                    builder: (context, _res, child) {
-                      return SizedBox(
-                        height: _res.keyboardHeight > 0
-                            ? _res.keyboardHeight
-                            : keyboardConfig.keyboardHeight > 0
-                                ? keyboardConfig.keyboardHeight
-                                : MediaQuery.of(_context).viewInsets.bottom !=
-                                            null &&
-                                        MediaQuery.of(_context)
-                                                .viewInsets
-                                                .bottom >
-                                            0
-                                    ? MediaQuery.of(_context).viewInsets.bottom
-                                    : 0,
-                      );
-                    },
-                  );
-                },
-              ),
+              // KeyboardAware(
+              //   builder: (context, keyboardConfig) {
+              //     return Consumer<ScreenHeight>(
+              //       builder: (context, _res, child) {
+              //         return SizedBox(
+              //           height: _res.keyboardHeight > 0
+              //               ? _res.keyboardHeight
+              //               : keyboardConfig.keyboardHeight > 0
+              //                   ? keyboardConfig.keyboardHeight
+              //                   : MediaQuery.of(_context).viewInsets.bottom !=
+              //                               null &&
+              //                           MediaQuery.of(_context)
+              //                                   .viewInsets
+              //                                   .bottom >
+              //                               0
+              //                       ? MediaQuery.of(_context).viewInsets.bottom
+              //                       : 0,
+              //         );
+              //       },
+              //     );
+              //   },
+              // ),
             ],
           ),
         );
