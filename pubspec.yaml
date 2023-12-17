@@ -17,7 +17,7 @@ dependencies:
   camera: ^0.5.8+1
   flutter_mobx: ^1.1.0
   path_provider: ^1.6.8
-  keyboard_utils: ^1.2.1
+  # keyboard_utils: ^1.2.1
   after_layout: ^1.0.7+2
 #  video_compress: ^2.0.0
 #  video_player: ^0.10.11
