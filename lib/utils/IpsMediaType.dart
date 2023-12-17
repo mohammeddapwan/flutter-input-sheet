@@ -1,0 +1,4 @@
+enum IpsMediaType {
+  PHOTO,
+  VIDEO,
+}
